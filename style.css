@@ -7,14 +7,17 @@ body {
   justify-content: center;
   align-items: center;
   background-repeat: no-repeat;
+  margin: 20px;
 }
 .todo-form {
   margin: 20px auto;
-  padding: 20px;
-  border: 2px solid #eeeeee;
+  padding: 16px;
+  border: 2px solid #adadad;
   border-radius: 10px;
   transition: all 0.3s ease;
   background-color: white;
+  justify-content: space-evenly;
+  display: flex;
 }
 
 .todo-form:hover{
@@ -49,19 +52,37 @@ li{
   background-color: white;
   border-radius: 4px;
   transition: 200ms;
+  margin-top: 16px;
+  margin-bottom: 16px;
+  margin-right: 16px;
 }
 
 li:hover{
-  background-color: rgba(255, 99, 71, 0.342);
-  margin-top: 16px;
-  margin-bottom: 16px;
+  background-color: rgba(255, 71, 71, 0.342);
+  margin-bottom: 4px;
 }
 
+.optimusnigga{
+  margin: 12px auto;
+  padding: none;
+  width: 100%;
+  max-width: 600px;
+  border-radius: 10px;
+  transition: all 0.3s ease;
+}
+
+.optimusnigga:hover{
+  backdrop-filter: blur(10px);
+  display: flex;
+  flex-flow: column;
+  justify-content: space-evenly;
+}
 
 .optimusnigga ul{
   border-radius: 20px;
-  padding: 8px;
+  padding: 12px;
   border-radius: 10px;
+ 
 }
 #nigga{
     padding: 8px 30px;
@@ -122,6 +143,9 @@ transition: 200ms;
   list-style: none;
   padding: 0;
   margin: 0;
+  width: 100%;
+  max-width: 1000px;
+
 }
 .todo-items li {
   padding: 10px;
@@ -136,6 +160,7 @@ transition: 200ms;
   border: none;
   padding: 5px 10px;
   font-size: 16px;
+  border-radius: 10px;
   cursor: pointer;
 }
 .delete-button:hover {
@@ -143,15 +168,28 @@ transition: 200ms;
 }
 
   /* Add mobile-friendly styles here */
-  @media only screen and (max-width: 768px) {
+  @media only screen and (max-width: 430px) {
     .todo-form {
-         width: 90%;
-         margin: 20px auto;
+         width: 100%;
+         max-width: 250px;
+         display: flex;
+         flex-flow: column;
+         justify-content: center;
+         align-items: center;
+     }
+
+     .block{
+      width: 100%;
+      max-width: 300px;
+      border: none;
+      box-shadow: none;
+      backdrop-filter: blur(30px);
      }
     .todo-input {
          width: 100%;
          padding: 10px;
          font-size: 16px;
+         max-width: 230px;
      }
     .todo-items {
          list-style: none;
@@ -164,5 +202,19 @@ transition: 200ms;
      }
     .todo-items li:last-child {
          border-bottom: none;
+     }
+
+     #nigga{
+      width: 100%;
+      max-width: 90px;
+      margin-top: 16px;
+     }
+
+     body{
+      background-size: cover;
+      background-image: url(kda.jpg);
+      background-position: center;
+      background-position-y: top;
+      background-repeat: repeat;
      }
  }
