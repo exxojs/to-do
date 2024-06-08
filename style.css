@@ -1,0 +1,168 @@
+body {
+  font-family: Be Vietnam Pro, arial;
+  background-image: url(Lol.jpg);
+  background-size: cover;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  background-repeat: no-repeat;
+}
+.todo-form {
+  margin: 20px auto;
+  padding: 20px;
+  border: 2px solid #eeeeee;
+  border-radius: 10px;
+  transition: all 0.3s ease;
+  background-color: white;
+}
+
+.todo-form:hover{
+  background-color: white;
+  /*50, 168, 80*/
+  box-shadow: rgb(201, 46, 70) 0px 0px 0px 0px;
+  transform: translateY(5px);
+  transition: 200ms;
+}
+
+.block{
+  margin: 20px auto;
+  width: 100%;
+  max-width: 600px;
+  padding: 20px;
+  border: 2px solid #1e0025;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  box-shadow: rgba(128, 0, 128, 0.151) 0px 10px 0px 0px;
+  transition: all 0.3s ease;
+  backdrop-filter: blur(5px);
+}
+
+.block:hover{
+  background-color: white;
+  /*50, 168, 80*/
+  box-shadow: rgba(201, 46, 69, 0.048) 0px 0px 0px 0px;
+  transform: translateY(5px);
+  transition: 200ms;
+}
+li{
+  background-color: white;
+  border-radius: 4px;
+  transition: 200ms;
+}
+
+li:hover{
+  background-color: rgba(255, 99, 71, 0.342);
+  margin-top: 16px;
+  margin-bottom: 16px;
+}
+
+
+.optimusnigga ul{
+  border-radius: 20px;
+  padding: 8px;
+  border-radius: 10px;
+}
+#nigga{
+    padding: 8px 30px;
+    border-radius: 10px;
+    border: 0;
+    background-color: #0866ff;
+    letter-spacing: 1.5px;
+    font-size: 15px;
+    transition: all 0.3s ease;
+    color: hsl(0, 0%, 100%);
+    cursor: pointer;
+    margin: 8px;
+}
+
+#nigga:hover{
+  box-shadow: #064ab8 0px 7px 0px 0px;
+}
+
+#nigga:active{
+  background-color: #0866ff;
+  /*50, 168, 80*/
+  box-shadow: #0866ff 0px 0px 0px 0px;
+  transform: translateY(5px);
+  transition: 200ms;
+}
+
+#nigga2{
+  padding: 8px;
+  border-radius: 10px;
+  border: 0;
+  background-color: rgb(252, 28, 12);
+  letter-spacing: 1.5px;
+  font-size: 15px;
+  transition: all 0.3s ease;
+  color: hsl(0, 0%, 100%);
+  cursor: pointer;
+  margin: 7px;
+}
+
+#nigga2:hover{
+box-shadow: tomato 0px 7px 0px 0px;
+}
+
+#nigga2:active{
+background-color: tomato;
+/*50, 168, 80*/
+box-shadow: tomato 0px 0px 0px 0px;
+transform: translateY(5px);
+transition: 200ms;
+}
+
+.todo-input {
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+}
+.todo-items {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.todo-items li {
+  padding: 10px;
+  border-bottom: 1px solid #ccc;
+}
+.todo-items li:last-child {
+  border-bottom: none;
+}
+.delete-button {
+  background-color: #ff0000;
+  color: #fff;
+  border: none;
+  padding: 5px 10px;
+  font-size: 16px;
+  cursor: pointer;
+}
+.delete-button:hover {
+  background-color: #cc0000;
+}
+
+  /* Add mobile-friendly styles here */
+  @media only screen and (max-width: 768px) {
+    .todo-form {
+         width: 90%;
+         margin: 20px auto;
+     }
+    .todo-input {
+         width: 100%;
+         padding: 10px;
+         font-size: 16px;
+     }
+    .todo-items {
+         list-style: none;
+         padding: 0;
+         margin: 0;
+     }
+    .todo-items li {
+         padding: 10px;
+         border-bottom: 1px solid #ccc;
+     }
+    .todo-items li:last-child {
+         border-bottom: none;
+     }
+ }
